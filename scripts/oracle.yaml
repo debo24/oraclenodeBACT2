@@ -1,0 +1,20 @@
+windows:
+  - name: oracle
+    root: ./
+    layout: main-vertical
+    panes:
+      - commands:
+        - sleep 1
+        - ganache-cli -a 5 -d -m "gesture rather obey video awake genuine patient base soon parrot upset lounge"
+      - commands:
+        - cd ./onChain
+        - cp .env .env
+        - npm install
+        - truffle compile
+        - truffle migrate
+      -commands:
+        - cd ./offChain
+        - cp .env .env
+        - npm install
+        - sleep 20
+        - npm run dev
